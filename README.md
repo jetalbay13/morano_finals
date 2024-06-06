@@ -11,6 +11,13 @@ CREATE TABLE `crud` (
   PRIMARY KEY (`id`)
 )
 
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
 INSERT INTO `users` (`username`, `password`) VALUES ('jethro', 'password123');
 
 ```
